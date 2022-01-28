@@ -43,7 +43,7 @@ public class utilityThread implements Runnable{
                     HttpResponse.BodyHandlers.ofString());
 
             // update value in HashMap for output
-            System.out.println("response.statusCode(): "+response.statusCode());
+            //System.out.println("response.statusCode(): "+response.statusCode());
             if(response.statusCode() == 200)
                 ProcessApiRequest.hMap.put(uniqueId, response.body());
 

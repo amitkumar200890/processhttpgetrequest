@@ -32,7 +32,7 @@ public class ProcessApiRequest {
 
                 if(hMap.containsKey(str)) continue;
 
-                hMap.put(str+"", 0+"");
+                hMap.put(str+"", "");
                 executorService.submit(new utilityThread(str));
 
             } catch (IOException e) {
